@@ -1,0 +1,265 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #3333;
+	position: relative;
+}
+ul{
+	list-style: none;	
+}
+a{
+	text-decoration: none;
+}
+.container{
+	background-color: rgb(252,244,253);
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+
+}
+header{
+	position: fixed;
+	left:0;
+	top: 0;
+	height: 44px;
+	width:100%;
+	z-index: 1000;
+}
+.header_box{
+	background-color: rgba(199,21,33,1);
+	height: 100%;
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+	display: flex;
+	align-items: center;
+}
+.log{
+	background-image: url(../images/logo.jpg);
+	width: 60px;
+	height: 30px;
+	background-size: 60px,30px;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+}
+.header_box>form{
+	flex: 1;
+	position: relative;
+}
+.header_box>form>input{
+	width: 100%;
+	height: 34px;
+	border-radius: 17px;
+	padding-left: 25px;
+}
+.search_img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/search.png);
+	background-size: 20px 20px;
+	position: absolute;
+	left: 5px;
+	top: 7px;
+}
+.sign{
+	width: 50px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+
+
+
+/*nav*/
+nav{
+	width: 100%;
+	border-bottom:1px solid #e0e0e0;
+	background-color: white;
+	/*margin:15 0px;*/
+	margin-top:-4px;
+	display: flex;
+	flex-direction:column;
+}
+.nav_1,.nav_2{
+	overflow: hidden;
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	
+	margin-bottom: 20px;
+}
+.nav_1{
+	margin-top: 20px;
+}
+.nav_2{	
+	margin-bottom: 20px;
+	/*margin-top:0;*/
+}
+nav>ul>li{
+	float: left;
+	width: 18%;
+}
+.nav_1>li>a>img,.nav_2>li>a>img{
+	display: black;
+	width: 100%;
+	/*padding:0 40px;*/
+}
+/*.nav_2{
+	margin-top: 30px;
+}*/
+.nav_1>li>a>p,.nav_2>li>a>p{
+	color: black;
+	/*font-size: 25px;*/
+	text-align: center;
+	margin-left: 5px;
+}
+/*
+掌上秒杀
+ */
+.product{
+	padding:0 5px;
+}
+.section_1{
+	width :100%;
+	
+	margin-top:10px;
+	box-shadow: 0 0 1px #e0e0e0;
+}
+.white{
+	background-color: white;
+}
+.product_box{
+	/*font-size: 25px;*/
+	
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+}
+.product_box>.clock{
+	/*display: black;*/
+	float: left;
+	background-image: url(../images/clock.png);
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	margin-left: 10px; 
+	margin-top:5px;
+}
+.seckill{
+	color:rgb(199,21,33); 
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px; 
+}
+.product_box>.time{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px; 
+}
+.product_box>.time>span{
+	background-color: rgb(51,51,51);
+	color: white;
+	padding:2px 5px;
+}
+.product_box>.time>.colon{
+	background-color: white;
+	color: rgb(51,51,51);
+}
+.product_box>.more{
+	float: left;
+	margin-left: 50px; 
+	margin-top: 5px;
+}
+
+/* */
+.product_box_con{
+	width: 100%;
+	margin-top: 10px;
+}
+.product_box_con>ul{
+	width:100%;
+	/*overflow: hidden;*/
+	display: flex;
+	justify-content: space-around;
+}
+.product_box_con>ul>li{
+	/*float: left;*/
+	width: 33.3%;
+}
+.product_box_con>ul>li>p{
+	text-align: center;
+	width: 80%;
+	padding-right:0;
+	margin:auto;
+}
+.product_box_con>ul>li>p:last-child{
+	text-decoration: line-through;
+}
+.product_box_con>ul>li>a{
+	display: block;
+	width: 100%;
+	border-left: 1px solid #c0c0c0;
+}
+.product_box_con>ul>li:first-child>a{
+	
+	border-left: none;
+}
+.product_box_con>ul>li>a>img{
+	width:80%;
+	display:block;
+	margin:auto;
+}
+/*京东超市*/
+.supermarket{
+	width: 100%;
+	background-color:white;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.supermarket>p{
+	padding:10px 0;
+}
+.supermarket>.left{
+	width: 50%;
+	display: block;
+	float: left;
+	
+}
+.w_50>img{
+	width:100%;
+	display: block;
+}
+.supermarket>.right{
+	width:50%;
+	display: block;
+	float: right;
+
+}
+.left_border{
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+}
+.right_border{
+		border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+}
+.left_border_1{
+	border-top: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+}
+
